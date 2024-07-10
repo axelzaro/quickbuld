@@ -19,7 +19,7 @@ echo "file creation" > README.md
 echo "another" > package2.json
 ## ln -s existing_source_file optional_symbolic_link
 echo "------------------------HERE23------------------------------"
-for VARIABLE in {1..500}
+for VARIABLE in {1..5}
 do
     mkdir dir_$VARIABLE
     echo "another file" > dir_$VARIABLE/file.json
