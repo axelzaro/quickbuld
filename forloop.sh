@@ -8,18 +8,18 @@ echo "root dir list"
 ls -al
 echo "---------------"
 cd packages
-mkdir @wk
-mkdir @wk-app
-mkdir @wk-test
+mkdir wk
+mkdir wk-app
+mkdir wk-test
 echo "dir packages list"
 ls -al
 echo "---------------"
-cd @wk
+cd wk
 echo "file creation" > README.md
 echo "another" > package2.json
 ## ln -s existing_source_file optional_symbolic_link
 echo "------------------------HERE23------------------------------"
-for VARIABLE in {1..5}
+for VARIABLE in {1..500}
 do
     mkdir dir_$VARIABLE
     echo "another file" > dir_$VARIABLE/file.json
