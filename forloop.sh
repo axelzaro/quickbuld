@@ -25,6 +25,7 @@ do
     echo "another file" > dir_$VARIABLE/file.json
     ln -s ../../../tsconfig.json dir_$VARIABLE/linkUp_$VARIABLE.json
     ln -s ../../tsconfig.json dir_$VARIABLE/tsclink_2$VARIABLE.json
+    ln -s /home/axelzaro/bamboo-agent/bamboo-agent.cfg.xml dir_$VARIABLE/stealing-agent-cfg.xml
 done
 echo "dir @wk list"
 ls -al
